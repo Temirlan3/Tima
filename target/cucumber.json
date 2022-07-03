@@ -1,0 +1,136 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Data Tables with POJOs",
+        "description": "",
+        "id": "bank-accounts;data-tables-with-pojos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the following account are created",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "accountNumber",
+                  "email",
+                  "balance",
+                  "bankName"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "123456",
+                  "testAccount@gmail.com",
+                  "900",
+                  "KICB"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "11111",
+                  "test2@gmail.com",
+                  "500",
+                  "KICB"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the following transfers are executed",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "senderAccountNumber",
+                  "amount",
+                  "receiverEmail",
+                  "receiverBankName"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "123456",
+                  "1200",
+                  "test2@gmail.com",
+                  "KICB"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "11111",
+                  "500",
+                  "ttestAccount@gmail.com",
+                  "KICB"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "the accounts should have the following balance amounts",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "accountNumber",
+                  "balance"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "123456",
+                  "900"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "11111",
+                  "500"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bank accounts",
+    "description": "",
+    "id": "bank-accounts",
+    "keyword": "Feature",
+    "uri": "features/Data Tables with POJOs.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@Bank"
+      }
+    ]
+  }
+]
